@@ -1,0 +1,51 @@
+@font-face {
+    font-family: ProcrastinatingPixie;
+    src: url(../fonts/ProcrastinatingPixie-WyVOO.ttf);
+}
+
+:root{
+    --z-index-header : 1;
+}
+
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+*{
+    margin:0;
+    padding:0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-size: 100%;
+}
+
+body{
+    background-color: black;
+    width: 100%;
+}
+
+section{
+    height: 100vh;
+    width: 100vw;
+}
+
+.center_flex{
+    align-items: center;
+}
+
+.space_between{
+    justify-content: space-between;
+}
+
+.mid{
+    position: relative;
+    top: 30vh;
+    left: 15vw;
+    width: 80vw;
+    color: white;
+    font-size: 110px;
+    display: flex;
+}

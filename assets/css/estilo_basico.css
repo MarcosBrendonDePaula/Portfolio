@@ -1,0 +1,42 @@
+header {
+    position: fixed;
+    z-index: var(--z-index-header);
+    padding : 20px 50px;
+    width: 100%;
+}
+
+header nav{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+header .Logo{
+    font-family: ProcrastinatingPixie;
+    font-size: 80px;
+    color: darkgray;
+    text-decoration: none;
+    text-shadow: 6px 6px black;
+}
+
+header ul{
+    box-sizing: border-box;
+}
+
+header ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 20px;
+    
+}
+
+header ul li a{
+    font-size: 30px;
+    text-decoration: none;
+    color: white;
+    text-shadow: 4px 2px black;
+    
+}
+
+

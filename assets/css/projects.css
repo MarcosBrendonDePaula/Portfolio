@@ -1,0 +1,64 @@
+#Projects {
+    background-image: linear-gradient(to right, #373736, #4c4c4b, #626161, #797879, #909090);
+}
+#Projects .container{
+    position: relative;
+    height: 30vw;
+    width: 80vw;
+    
+    top: 25vh;
+    left: 10vw;
+
+    display: flex;
+
+    
+    overflow-x: auto;
+    overflow-y: hidden;
+    flex-direction: row;
+    
+}
+
+#Projects .container .item{
+    min-width: 30%;
+    min-height: 80%;
+    border: 1px solid snow;
+    margin: 20px;
+}
+
+#Projects .container .item .text_flag{
+    color:white;
+    font-size: 40px;
+    display: inline-block;
+    transform: rotate(45deg);
+    position: absolute;
+    left: 22%;
+    top: 45%;
+    font-family: ProcrastinatingPixie;
+}
+
+#Projects .container .item .info{
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#Projects .container .item .info a{
+    text-decoration: none;
+    font-family: ProcrastinatingPixie;
+    color: white;
+}
+
+#Projects .container .item .info img{
+    width: 70%;
+    position: absolute;
+    top: 10%;
+}
+
+#Projects .container .item .info .name{
+    font-size: 35px;
+    position: absolute;
+    bottom: 5%;
+    color: white;
+    text-decoration: none;
+}

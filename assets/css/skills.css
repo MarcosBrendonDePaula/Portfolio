@@ -1,0 +1,42 @@
+#Skills{
+    background-image: linear-gradient(to right top, #141517, #191a1c, #1d1e21, #212326, #26282b, #2a2c2f, #2e3034, #323438, #36383c, #3a3c41, #3e4145, #42454a);
+}
+
+#Skills .mid{
+    top: 2vh;
+}
+
+#Skills .Mastered,#Skills .Learned{
+    font-size: xx-large;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 45%;
+    width: 90%;
+}
+
+
+#Skills .skill-container{
+    display: flex;
+    height: 45%;
+    width: 90%;
+}
+
+
+#Skills .skill-container .skill{
+    background-color: #42454a;
+    height: 90%;
+    border-radius: 20%;
+    padding: 20px;
+    margin: 10px;
+    display: inline-block;
+}
+
+#Skills .skill-container .skill svg{
+    height: 100%;
+}
+
+.skill svg .selo{
+    fill: white;
+}

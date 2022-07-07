@@ -1,0 +1,19 @@
+#Home{
+    background-color: aquamarine;
+    background-image: url(/assets/image/hero.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    font-family: ProcrastinatingPixie;
+    width: 100vw;
+}
+
+#Home .mid{
+    width: 80vw;
+}
+
+#Home .mid .right img{
+    width: 300px;
+    height: 300px;
+    border-radius: 150px;
+}
