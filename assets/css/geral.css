@@ -36,6 +36,10 @@ section{
     align-items: center;
 }
 
+.text_center{
+    text-align: center;
+}
+
 .space_between{
     justify-content: space-between;
 }

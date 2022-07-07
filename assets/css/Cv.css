@@ -1,0 +1,20 @@
+#Cvs{
+    background-image: linear-gradient(to right top, #141517, #191a1c, #1d1e21, #212326, #26282b, #2a2c2f, #2e3034, #323438, #36383c, #3a3c41, #3e4145, #42454a);
+}
+
+#Cvs .mid{
+    top:0;
+    left: 0%;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+#Cvs .button{
+    font-size: 30px;
+    padding: 30px;
+    border-radius: 30px;
+    border: 1px solid white;
+    color: white;
+}
