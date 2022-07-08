@@ -72,9 +72,9 @@
 
 #Projects .container .item .tags{
     position: relative;
-    top: 0;
+    top: -10%;
     width: 80%;
-    height: 80%;
+    height: 8%;
     
 }
 
@@ -87,7 +87,7 @@
 }
 
 #Projects .container .item .info{
-    /* display: none; */
+    display: none;
     width: 80%;
     height: 80%;
 }
