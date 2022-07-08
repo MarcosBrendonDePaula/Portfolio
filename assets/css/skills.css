@@ -10,22 +10,25 @@
     font-size: 2vw;
     flex-wrap: wrap;
     display: flex;
-    left: 10vw;
+    left: 1vw;
     flex-direction: column;
     justify-content: center;
     height: 35%;
-    width: 90%;
+    width: 100%;
 }
 
 
 #Skills .skill-container{
     display: flex;
     height: 70%;
-    width: 90%;
+    width: 100%;
+    overflow: auto;
+    overflow-y: hidden;
 }
 
 
 #Skills .skill-container .skill{
+    text-align: center;
     background-color: #42454a;
     height: 90%;
     border-radius: 20%;

@@ -22,8 +22,13 @@
 #Projects .container .item{
     min-width: 30%;
     min-height: 70%;
-    border: 1px solid snow;
+    border: 3px solid snow;
     margin: 20px;
+    border-radius: 10px;
+}
+
+#Projects .container .item:hover{
+    background-color: #17171690;
 }
 
 #Projects .container .item .text_flag{
@@ -32,33 +37,57 @@
     display: inline-block;
     transform: rotate(45deg);
     position: relative;
-    left: 2%;
-    top: 40%;
+    left: -27%;
+    top: 27%;
     font-family: ProcrastinatingPixie;
 }
 
-#Projects .container .item .info{
+#Projects .container .item{
     display: flex;
     justify-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    text-align: center;
 }
 
-#Projects .container .item .info a{
+#Projects .container .item > span a{
     text-decoration: none;
     font-family: ProcrastinatingPixie;
     color: white;
 }
 
-#Projects .container .item .info img{
+#Projects .container .item > img{
     max-width: 100%;
-    padding: 10%;
+    max-height: 60%;
+    padding: 5%;
 }
 
-#Projects .container .item .info .name{
+#Projects .container .item > .name{
     font-size: 2vw;
     position: absolute;
     bottom: 10%;
     color: white;
     text-decoration: none;
+}
+
+#Projects .container .item .tags{
+    position: relative;
+    top: 0;
+    width: 80%;
+    height: 80%;
+    
+}
+
+#Projects .container .item .tags ul > li{
+    width: 10%;
+    height: 80%;
+    text-decoration: none;
+    list-style: none;
+    display: inline-block;
+}
+
+#Projects .container .item .info{
+    /* display: none; */
+    width: 80%;
+    height: 80%;
 }
