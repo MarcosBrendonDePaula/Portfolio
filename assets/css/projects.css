@@ -1,6 +1,7 @@
 #Projects {
     background-image: linear-gradient(to right, #373736, #4c4c4b, #626161, #797879, #909090);
 }
+
 #Projects .container{
     position: relative;
     height: 30vw;
@@ -20,14 +21,14 @@
 
 #Projects .container .item{
     min-width: 30%;
-    min-height: 80%;
+    min-height: 70%;
     border: 1px solid snow;
     margin: 20px;
 }
 
 #Projects .container .item .text_flag{
     color:white;
-    font-size: 40px;
+    font-size: 3.2vw;
     display: inline-block;
     transform: rotate(45deg);
     position: relative;
@@ -55,9 +56,9 @@
 }
 
 #Projects .container .item .info .name{
-    font-size: 35px;
+    font-size: 2vw;
     position: absolute;
-    bottom: 5%;
+    bottom: 10%;
     color: white;
     text-decoration: none;
 }

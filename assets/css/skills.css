@@ -3,23 +3,24 @@
 }
 
 #Skills .mid{
-    top: 5vh;
+    top: 25vh;
 }
 
 #Skills .Mastered,#Skills .Learned{
-    font-size: xx-large;
+    font-size: 2vw;
     flex-wrap: wrap;
     display: flex;
+    left: 10vw;
     flex-direction: column;
     justify-content: center;
-    height: 45%;
+    height: 35%;
     width: 90%;
 }
 
 
 #Skills .skill-container{
     display: flex;
-    height: 45%;
+    height: 70%;
     width: 90%;
 }
 
