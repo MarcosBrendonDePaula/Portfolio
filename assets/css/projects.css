@@ -30,9 +30,9 @@
     font-size: 40px;
     display: inline-block;
     transform: rotate(45deg);
-    position: absolute;
-    left: 22%;
-    top: 45%;
+    position: relative;
+    left: 2%;
+    top: 40%;
     font-family: ProcrastinatingPixie;
 }
 
@@ -50,9 +50,8 @@
 }
 
 #Projects .container .item .info img{
-    width: 70%;
-    position: absolute;
-    top: 10%;
+    max-width: 100%;
+    padding: 10%;
 }
 
 #Projects .container .item .info .name{
