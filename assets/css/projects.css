@@ -93,7 +93,7 @@
 }
 
 #Projects .container .item .project_link > svg{
-    height: 100%;
+    height: 5vh;
     padding-right: 3px;
 }
 
