@@ -72,10 +72,29 @@
 
 #Projects .container .item .tags{
     position: relative;
-    top: -10%;
+    top: -8%;
     width: 80%;
     height: 8%;
     
+}
+
+#Projects .container .item .project_link{
+    position: relative;
+    display: flex;
+    text-decoration: none;
+    font-size: 1.8vw;
+    font-family: ProcrastinatingPixie;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    top: -10%;
+    width: 80%;
+    height: 8%;
+}
+
+#Projects .container .item .project_link > svg{
+    height: 100%;
+    padding-right: 3px;
 }
 
 #Projects .container .item .tags ul > li{
