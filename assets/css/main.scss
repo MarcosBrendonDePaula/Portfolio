@@ -232,7 +232,6 @@
 
 #Contact{
     background-image: linear-gradient(to right top, #141517, #191a1c, #1d1e21, #212326, #26282b, #2a2c2f, #2e3034, #323438, #36383c, #3a3c41, #3e4145, #42454a);
-    /* background-image: linear-gradient(to right, #373736, #4c4c4b, #626161, #797879, #909090); */
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -311,18 +310,24 @@
             text-align: center;
             background-color: #42454a;
             height: 90%;
+            min-width: 11%;
             border-radius: 20%;
             padding: 20px;
             margin: 10px;
             display: inline-block;
 
-            svg{
+            > figure {
+                height: 80%;
+                width: 100%;
 
-                height: 100%;
-                
-                .selo{
-                    fill: white;
+                figcaption{
+                    font-size: 56%;
                 }
+
+                img{
+                    height: 100%;
+                }
+
             }
         }
     }
