@@ -1,5 +1,4 @@
 @media screen and (max-width: 740px){
-    
 
     section{
         width: 98vw;
@@ -7,22 +6,66 @@
     }
 
     #Navbar {
-        ul{
+        height: 10vh;
+        background-color: #323337;
+        
+        .Logo{
+            font-family: ProcrastinatingPixie;
+            font-size: 20vw;
+            color: darkgray;
+            text-decoration: none;
+            text-shadow: 6px 6px black;
+        }
+
+        #menu{
             display: none;
         }
         
         nav{
+            
             height: 100%;
+
+            #menu_mobile{
+                color: white;
+                background-color:#323337;
+                position: fixed;
+                top: 10vh;
+                left: 0vw;
+                >ul{
+                    display: block;
+                    li{
+                        a{
+                            font-size:5vw;
+                            width: 100%;
+                            display: inline-block;
+                        }
+                        padding: 2%;
+                        border: 1px solid white;
+                        display:block;
+                    }
+                }
+
+                width:100%;
+                display: block;
+
+                position: fixed;
+            }
+            
+            
         }
 
-        .menu_mobile{
+        .menu_switch{
             text-align: center;
             display: block;
             height: 100%;
             font-size: 9vw;
+            
         }
-
     }
+
+
+    
+    
 
     #Home {
         .mid {
@@ -47,7 +90,11 @@
 
     #About {
         .mid {
-            font-size: 7vw;
+            font-size: 8vw;
+            flex-direction: column;
+            span{
+                padding: 3vw;
+            }
         }
     }
 

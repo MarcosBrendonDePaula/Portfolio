@@ -23,15 +23,16 @@
 
     <script src="https://unpkg.com/scrollreveal" defer></script>
     <script src="assets/js/scrollcontroll.js" defer></script>
+    <script src="assets/js/main.js" defer></script>
 </head>
 <body>
     
     <header id="Navbar">
         <nav>
-            <a class="Logo">
+            <a class="Logo" href="#Home">
                 MB
             </a>
-            <ul>
+            <ul id="menu">
                 <li>
                     <a href="#Home">Home</a>
                 </li>
@@ -51,13 +52,37 @@
                     <a href="#Contact">Contact</a>
                 </li>
             </ul>
-            <a href="javascript:void(0);" class="icon menu_mobile" onclick="myFunction()">
+            <a  href="javascript:void(0);"  class="icon menu_switch" onclick="switch_menu();">
                 <i class="fa fa-bars"></i>
             </a>
+            <div id="menu_mobile" class="display_none">
+                <ul>
+                    <li>
+                        <a href="#Home" onclick="switch_menu();">Home</a>
+                    </li>
+                    <li>
+                        <a href="#About" onclick="switch_menu();">About</a>
+                    </li>
+                    <li>
+                        <a href="#Skills" onclick="switch_menu();">Skills</a>
+                    </li>
+                    <li>
+                        <a href="#Projects" onclick="switch_menu();">Projects</a>
+                    </li>
+                    <li>
+                        <a href="#Cvs" onclick="switch_menu();">Cvs</a>
+                    </li>
+                    <li>
+                        <a href="#Contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
+        
     </header>
 
     <section id="Home">
+        
         <div class="mid space_between center_flex">
             <div class="left top_animation">
                 <p>Hi I'm <strong>Marcos</strong></p>
