@@ -1,7 +1,8 @@
 ScrollReveal({ reset: true });
 
 ScrollReveal().reveal(".show-once", {
-	reset: false
+	reset: false,
+    mobile: false
 });
 
 ScrollReveal().reveal(".top_animation", {
@@ -12,7 +13,8 @@ ScrollReveal().reveal(".top_animation", {
 	rotate: {
 		x: 20,
 		z: -10
-	}
+	},
+    mobile: false
 });
 
 ScrollReveal().reveal(".left_animation", {
@@ -23,7 +25,8 @@ ScrollReveal().reveal(".left_animation", {
     rotate: {
         x: 20,
         z: -10
-    }
+    },
+    mobile: false
 });
 
 ScrollReveal().reveal(".right_animation", {
@@ -34,10 +37,12 @@ ScrollReveal().reveal(".right_animation", {
     rotate: {
         x: 20,
         z: -10
-    }
+    },
+    mobile: false
 });
   
 ScrollReveal().reveal(".fade_in_animation", {
 	duration: 1000,
-	move: 0
+	move: 0,
+    mobile: false
 });

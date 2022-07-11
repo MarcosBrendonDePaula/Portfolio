@@ -8,6 +8,14 @@
   font-size: 100%;
 }
 
+.dispay_none {
+  display: none;
+}
+
+.menu_mobile {
+  display: none;
+}
+
 @font-face {
   font-family: ProcrastinatingPixie;
   src: url(../fonts/ProcrastinatingPixie-WyVOO.ttf);
@@ -251,14 +259,14 @@ body > section {
   background-color: white;
   border-radius: 20px;
 }
-#Contact .buttons {
+#Contact .container {
   display: flex;
   align-content: center;
   align-items: center;
   justify-content: center;
   width: 100%;
 }
-#Contact .buttons a {
+#Contact .container a {
   display: inline-block;
   margin: 5%;
   width: 15%;
@@ -323,4 +331,100 @@ body > section {
 }
 #Skills .skill-container .skill > figure img {
   height: 100%;
+}
+
+@media screen and (max-width: 740px) {
+  section {
+    width: 98vw;
+  }
+  #Navbar ul {
+    display: none;
+  }
+  #Navbar nav {
+    height: 100%;
+  }
+  #Navbar .menu_mobile {
+    text-align: center;
+    display: block;
+    height: 100%;
+    font-size: 9vw;
+  }
+  #Home .mid {
+    top: 12%;
+    left: 0;
+    width: 100vw;
+    font-size: 10vw;
+    flex-direction: column;
+  }
+  #Home .mid .left {
+    order: 1;
+  }
+  #Home .mid .right {
+    order: 0;
+  }
+  #Home .mid .right img {
+    width: 80vw;
+    height: 80vw;
+  }
+  #About .mid {
+    font-size: 7vw;
+  }
+  #Skills .mid {
+    top: 10vh;
+  }
+  #Skills .Mastered, #Skills .Learned {
+    font-size: 10vw;
+  }
+  #Skills .Mastered .skill-container, #Skills .Learned .skill-container {
+    overflow: auto;
+  }
+  #Skills .Mastered .skill-container .skill, #Skills .Learned .skill-container .skill {
+    height: 70%;
+    min-width: 35%;
+  }
+  #Skills .Mastered .skill-container .skill figure, #Skills .Learned .skill-container .skill figure {
+    height: 40%;
+    width: 100%;
+  }
+  #Skills .Mastered .skill-container .skill figure figcaption, #Skills .Learned .skill-container .skill figure figcaption {
+    font-size: 40%;
+  }
+  #Skills .Mastered .skill-container .skill figure img, #Skills .Learned .skill-container .skill figure img {
+    height: 100%;
+  }
+  #Projects .container {
+    top: 25vh;
+    height: 45vh;
+  }
+  #Projects .container .item {
+    min-width: 75%;
+  }
+  #Projects .container .item .text_flag {
+    font-size: 7.5vw;
+    left: -37%;
+    top: 30%;
+    font-family: ProcrastinatingPixie;
+  }
+  #Projects .container .item > .name {
+    font-size: 5vw;
+    position: absolute;
+    bottom: 10%;
+    width: 100%;
+    color: white;
+    text-decoration: none;
+  }
+  #Cvs .mid {
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  #Cvs .button {
+    width: 86vw;
+    font-size: 6vw;
+  }
+  #Contact .mid {
+    font-size: 6vw;
+  }
+  #Contact .mid .container a {
+    width: 100%;
+  }
 }/*# sourceMappingURL=main.css.map */
