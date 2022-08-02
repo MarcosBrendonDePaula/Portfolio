@@ -59,10 +59,11 @@ body{
 
 .mid{
     position: relative;
-    top: 20vh;
-    left: 15vw;
+    top: 50vh;
+    left: 50vw;
     width: 80vw;
     color: white;
     font-size: 110px;
     display: flex;
+    transform: translate(-50%, -50%);
 }

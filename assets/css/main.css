@@ -54,12 +54,13 @@ body > section {
 
 .mid {
   position: relative;
-  top: 20vh;
-  left: 15vw;
+  top: 50vh;
+  left: 50vw;
   width: 80vw;
   color: white;
   font-size: 110px;
   display: flex;
+  transform: translate(-50%, -50%);
 }
 
 #Navbar {
@@ -81,19 +82,30 @@ body > section {
   text-decoration: none;
   text-shadow: 6px 6px black;
 }
-#Navbar ul {
-  box-sizing: border-box;
+#Navbar #menu {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
-#Navbar ul li {
+#Navbar #menu li {
   list-style: none;
   display: inline-block;
   margin: 10px;
 }
-#Navbar ul a {
+#Navbar #menu a {
   font-size: 2.2vw;
   text-decoration: none;
   color: white;
   text-shadow: 4px 2px black;
+}
+#Navbar #menu #progress-indicator {
+  position: relative;
+  top: -8px;
+  margin-left: 1%;
+  width: 2%;
+  height: 5px;
+  background-color: white;
+  box-shadow: 4px 2px black;
 }
 #Navbar .menu_switch {
   display: none;
@@ -111,9 +123,9 @@ body > section {
   width: 100vw;
 }
 #Home .mid {
-  width: 80vw;
+  width: 70vw;
   justify-content: center;
-  font-size: 7vw;
+  font-size: 5em;
 }
 #Home .mid .left {
   padding: 10px;
@@ -128,15 +140,13 @@ body > section {
   background-image: linear-gradient(to right, #373736, #4c4c4b, #626161, #797879, #909090);
 }
 #About .mid {
-  font-size: 4vw;
+  font-size: 2.8vw;
 }
 
 #Cvs {
   background-image: linear-gradient(to right top, #141517, #191a1c, #1d1e21, #212326, #26282b, #2a2c2f, #2e3034, #323438, #36383c, #3a3c41, #3e4145, #42454a);
 }
 #Cvs .mid {
-  top: 0;
-  left: 0%;
   justify-content: space-around;
   align-items: center;
   height: 100vh;
@@ -259,12 +269,6 @@ body > section {
   background-size: cover;
   font-family: ProcrastinatingPixie;
 }
-#Contact a img {
-  width: 100%;
-  height: 100%;
-  background-color: white;
-  border-radius: 20px;
-}
 #Contact .container {
   display: flex;
   align-content: center;
@@ -275,7 +279,13 @@ body > section {
 #Contact .container a {
   display: inline-block;
   margin: 5%;
-  width: 15%;
+  width: 10%;
+}
+#Contact .container a img {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  border-radius: 20px;
 }
 #Contact .mid {
   font-size: large;
@@ -283,8 +293,6 @@ body > section {
   text-align: center;
   color: white;
   font-size: 2vw;
-  left: 10%;
-  top: 20vh;
 }
 #Contact .mid .infos {
   width: 100%;
@@ -298,18 +306,18 @@ body > section {
 #Skills {
   background-image: linear-gradient(to right top, #141517, #191a1c, #1d1e21, #212326, #26282b, #2a2c2f, #2e3034, #323438, #36383c, #3a3c41, #3e4145, #42454a);
 }
-#Skills .mid {
-  top: 25vh;
-}
 #Skills .Mastered, #Skills .Learned {
+  position: relative;
+  top: 20%;
+  left: 5%;
+  color: white;
   font-size: 2vw;
   flex-wrap: wrap;
   display: flex;
-  left: 1vw;
   flex-direction: column;
   justify-content: center;
   height: 35%;
-  width: 100%;
+  width: 90%;
 }
 #Skills .skill-container {
   display: flex;
@@ -382,6 +390,8 @@ body > section {
     font-size: 5vw;
     width: 100%;
     display: inline-block;
+    text-decoration: none;
+    color: white;
   }
   #Navbar .menu_switch {
     text-align: center;
@@ -390,11 +400,11 @@ body > section {
     font-size: 9vw;
   }
   #Home .mid {
-    top: 12%;
-    left: 0;
-    width: 100vw;
+    top: 45%;
+    width: 50vw;
     font-size: 10vw;
     flex-direction: column;
+    text-align: center;
   }
   #Home .mid .left {
     order: 1;
@@ -423,8 +433,8 @@ body > section {
     overflow: auto;
   }
   #Skills .Mastered .skill-container .skill, #Skills .Learned .skill-container .skill {
-    height: 70%;
-    min-width: 35%;
+    height: 35vw;
+    min-width: 35vw;
   }
   #Skills .Mastered .skill-container .skill figure, #Skills .Learned .skill-container .skill figure {
     height: 40%;

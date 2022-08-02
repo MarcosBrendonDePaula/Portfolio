@@ -38,6 +38,8 @@
                             font-size:5vw;
                             width: 100%;
                             display: inline-block;
+                            text-decoration: none;
+                            color: white;
                         }
                         padding: 2%;
                         border: 1px solid white;
@@ -63,17 +65,14 @@
         }
     }
 
-
-    
-    
-
     #Home {
         .mid {
-            top: 12%;
-            left: 0;
-            width: 100vw;
+            top: 45%;
+            width: 50vw;
             font-size: 10vw;
             flex-direction: column;
+            text-align: center;
+
             .left{
                 order: 1;
             }
@@ -107,10 +106,10 @@
             font-size: 10vw;
             .skill-container{
                 overflow: auto;
-
+                
                 .skill{
-                    height: 70%;
-                    min-width: 35%;
+                    height: 35vw;
+                    min-width: 35vw;
                     figure {
                         height: 40%;
                         width: 100%;

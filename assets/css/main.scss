@@ -22,20 +22,37 @@
         text-shadow: 6px 6px black;
     }
 
-    ul{
-        box-sizing: border-box;
+    #menu{
+        
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
         li{
             list-style: none;
             display: inline-block;
             margin: 10px;
         }
+
         a{
             font-size: 2.2vw;
             text-decoration: none;
             color: white;
             text-shadow: 4px 2px black;    
         }
+
+        #progress-indicator {
+            position: relative;
+            top: -8px;
+            margin-left: 1%;
+            width: 2%;
+            height: 5px;
+            background-color: white;
+            box-shadow: 4px 2px black;
+        }
     }
+
+   
 
     .menu_switch{
         display: none;
@@ -55,10 +72,10 @@
     width: 100vw;
     
     .mid{
-        width: 80vw;
+        width: 70vw;
         justify-content: center;
-        font-size: 7vw;
-        
+        font-size: 5em;
+
         .left{
             padding: 10px;
         }
@@ -79,7 +96,7 @@
     background-image: $bg_img_1;
     
     .mid {
-        font-size: 4vw;
+        font-size: 2.8vw;
     }
 }
 
@@ -91,8 +108,7 @@
     background-image: $bg_img_2;
     
     .mid{
-        top:0;
-        left: 0%;
+        
         justify-content: space-around;
         align-items: center;
         height: 100vh;
@@ -244,15 +260,6 @@
     background-position: center;
     background-size: cover;
     font-family: ProcrastinatingPixie;
-    
-    a {
-        img{
-            width: 100%;
-            height: 100%;
-            background-color: white;
-            border-radius: 20px;
-        }
-    }
 
     .container{
         display: flex;
@@ -264,7 +271,14 @@
         a{
             display: inline-block;
             margin: 5%;
-            width: 15%;
+            width: 10%;
+
+            img{
+                width: 100%;
+                height: 100%;
+                background-color: white;
+                border-radius: 20px;
+            }
         }
     }
 
@@ -275,8 +289,6 @@
         text-align: center;
         color: white;
         font-size: 2vw;
-        left:10%;
-        top:20vh;
 
         .infos{
             width: 100%;
@@ -292,19 +304,19 @@
 #Skills{
     background-image: linear-gradient(to right top, #141517, #191a1c, #1d1e21, #212326, #26282b, #2a2c2f, #2e3034, #323438, #36383c, #3a3c41, #3e4145, #42454a);
     
-    .mid{
-        top: 25vh;
-    }
-
     .Mastered,.Learned{
+        position: relative;
+        
+        top: 20%;
+        left: 5%;
+        color: white;
         font-size: 2vw;
         flex-wrap: wrap;
         display: flex;
-        left: 1vw;
         flex-direction: column;
         justify-content: center;
         height: 35%;
-        width: 100%;
+        width: 90%;
     }
 
     .skill-container{
@@ -339,6 +351,7 @@
 
             }
         }
+        
     }
 }
 @import "./mobile740px";
