@@ -1,21 +1,14 @@
-var menu_mobile = document.querySelector("#menu_mobile")
+// constants
+const vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0)
+const menu_mobile = document.querySelector("#menu_mobile")
+const progress_indicator = document.querySelector("#progress-indicator") 
+const sections = document.querySelectorAll("section") 
+
+
+
 function switch_menu() {
     menu_mobile.classList.toggle("display_none")
 }
-
-function vh(v) {
-    var h = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
-    return (v * h) / 100;
-}
-  
-function vw(v) {
-    var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
-    return (v * w) / 100;
-}
-
-
-var progress_indicator = document.querySelector("#progress-indicator") 
-let sections = document.querySelectorAll("section") 
 
 function getScrollPercent() {
     var h = document.documentElement, 
@@ -25,6 +18,9 @@ function getScrollPercent() {
     return (h[st]||b[st]) / ((h[sh]||b[sh]) - h.clientHeight) * 100;
 }
 
+
+
+// events
 window.addEventListener("scroll", function() {
-    progress_indicator.style.marginLeft = Math.min(Math.max(getScrollPercent()-1,2),90)+"%";
+    progress_indicator.style.marginLeft = Math.min(Math.max(getScrollPercent()-1,2),95)+"%";
 })

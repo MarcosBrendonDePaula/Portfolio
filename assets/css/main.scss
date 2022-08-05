@@ -25,20 +25,28 @@
     #menu{
         
         display: flex;
-        justify-content: space-between;
         flex-wrap: wrap;
+        width: 55%;
 
         li{
+            display: table;
+            margin: 0 auto;
             list-style: none;
-            display: inline-block;
-            margin: 10px;
+            min-width: 16%;
+            max-width: 16%;
+            text-align: center;
         }
 
         a{
-            font-size: 2.2vw;
+            display: inline-block;
+            font-size: 2.2em;
             text-decoration: none;
             color: white;
-            text-shadow: 4px 2px black;    
+            text-shadow: 4px 2px black;
+        }
+        
+        >div{
+            width: 100%;
         }
 
         #progress-indicator {
