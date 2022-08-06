@@ -91,13 +91,11 @@ body > section {
   display: table;
   margin: 0 auto;
   list-style: none;
-  min-width: 16%;
-  max-width: 16%;
   text-align: center;
 }
 #Navbar #menu a {
   display: inline-block;
-  font-size: 2.2em;
+  font-size: 2em;
   text-decoration: none;
   color: white;
   text-shadow: 4px 2px black;
