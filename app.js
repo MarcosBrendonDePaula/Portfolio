@@ -12,3 +12,4 @@ app.use(Express.static(path.join(__dirname,"public")))
 
 const http = require('http').Server(app);
 http.listen((process.env.PORT || 7002))
+console.log(`Usando porta:${process.env.PORT || 7002}`)
