@@ -1,69 +1,185 @@
-*{
-    margin:0;
-    padding:0;
-    border: none;
-    outline: none;
+/* Modern CSS Reset */
+*,
+*::before,
+*::after {
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
-    font-size: 100%;
-    
+    margin: 0;
+    padding: 0;
 }
 
+/* Improve text rendering */
+html {
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    scroll-behavior: smooth;
+    height: 100%;
+}
+
+body {
+    min-height: 100vh;
+    line-height: 1.5;
+    text-rendering: optimizeSpeed;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+    
+    &.menu-open {
+        overflow: hidden;
+        position: fixed;
+        width: 100%;
+    }
+}
+
+/* Remove default styles from headings and paragraphs */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+/* Make images easier to work with */
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Remove default styles from lists */
+ul,
+ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Make forms easier to work with */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+    color: inherit;
+}
+
+/* Remove animations for people who've turned them off */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* Custom utility classes */
 .display_none {
     display: none !important;
 }
 
-.menu_mobile{
-    display: none;
-}
-
-@font-face {
-    font-family: ProcrastinatingPixie;
-    src: url(../fonts/ProcrastinatingPixie-WyVOO.ttf);
-}
-
-:root{
-    --z-index-header : 1;
-}
-
-html{
-    scroll-behavior: smooth;
-    
-}
-
-body{
-    background-color: black;
-    width: 100%;
-    overflow-x: hidden;
-    
-    > section{
-        height: 100vh;
-        width: 100vw;
-        max-width: 100vw !important;
-        overflow-x: hidden;
-    }
-}
-
-
-.center_flex{
+.center_flex {
+    display: flex;
     align-items: center;
+    justify-content: center;
 }
 
-.text_center{
-    text-align: center;
-}
-
-.space_between{
+.space_between {
+    display: flex;
     justify-content: space-between;
 }
 
-.mid{
-    position: relative;
-    top: 50vh;
-    left: 50vw;
-    width: 80vw;
-    color: white;
-    font-size: 110px;
-    display: flex;
-    transform: translate(-50%, -50%);
+/* Animations */
+.fade_in_animation {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    
+    &.visible {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.top_animation {
+    animation: slideFromTop 0.6s ease-out forwards;
+}
+
+.right_animation {
+    animation: slideFromRight 0.6s ease-out forwards;
+}
+
+.left_animation {
+    animation: slideFromLeft 0.6s ease-out forwards;
+}
+
+@keyframes slideFromTop {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideFromRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideFromLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Touch handling improvements */
+@media (hover: none) {
+    a:hover,
+    button:hover {
+        outline: none;
+    }
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.4);
 }

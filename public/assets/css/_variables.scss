@@ -1,4 +1,78 @@
-$bg_img_1: linear-gradient(to right, #373736, #4c4c4b, #626161, #797879, #909090);
+$bg_img_1: linear-gradient(to right top, #141517, #191a1c, #1d1e21, #212326, #26282b, #2a2c2f, #2e3034, #323438, #36383c, #3a3c41, #3e4145, #42454a);
 $bg_img_2: linear-gradient(to right top, #141517, #191a1c, #1d1e21, #212326, #26282b, #2a2c2f, #2e3034, #323438, #36383c, #3a3c41, #3e4145, #42454a);
-$text_color_1: white;
-$text_color_2: black;
+
+:root {
+    --z-index-header: 1000;
+    --navbar-height: 60px;
+    --transition-speed: 0.3s;
+    --primary-color: #323337;
+    --text-color: #ffffff;
+    --accent-color: #007bff;
+    --background-overlay: rgba(0, 0, 0, 0.7);
+    
+    /* Spacing */
+    --spacing-xs: 4px;
+    --spacing-sm: 8px;
+    --spacing-md: 16px;
+    --spacing-lg: 24px;
+    --spacing-xl: 32px;
+    
+    /* Font Sizes */
+    --font-size-sm: 14px;
+    --font-size-base: 16px;
+    --font-size-lg: 18px;
+    --font-size-xl: 24px;
+    --font-size-2xl: 32px;
+    
+    /* Border Radius */
+    --border-radius-sm: 4px;
+    --border-radius-md: 8px;
+    --border-radius-lg: 16px;
+    
+    /* Shadows */
+    --shadow-sm: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    --shadow-md: 0 3px 6px rgba(0,0,0,0.15), 0 2px 4px rgba(0,0,0,0.12);
+    --shadow-lg: 0 10px 20px rgba(0,0,0,0.15), 0 3px 6px rgba(0,0,0,0.10);
+}
+
+/* Media query breakpoints */
+$mobile: 740px;
+$tablet: 1024px;
+$desktop: 1280px;
+
+/* Mixins for responsive design */
+@mixin mobile {
+    @media screen and (max-width: #{$mobile}) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media screen and (min-width: #{$mobile + 1}) and (max-width: #{$tablet}) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media screen and (min-width: #{$tablet + 1}) {
+        @content;
+    }
+}
+
+/* Utility mixins */
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin transition-all {
+    transition: all var(--transition-speed) ease-in-out;
+}
+
+@mixin hover-effect {
+    &:hover {
+        transform: translateY(-2px);
+        box-shadow: var(--shadow-md);
+    }
+}
